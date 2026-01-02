@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "happy_ghast_boats",
+  "version": "${version}",
+
+  "name": "Happy Ghast Boats",
+  "description": "Allows players to ride in boats leashed to happy ghasts",
+  "authors": [
+    "Pdani"
+  ],
+  "contact": {},
+
+  "license": "GPL-3.0",
+  "icon": "assets/happy_ghast_boats/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": ["hu.Pdani.happyghastboats.HappyGhastBoats"]
+  },
+
+  "mixins": [
+    "happy_ghast_boats.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
